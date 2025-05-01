@@ -6,6 +6,6 @@ export const connectDB = async () => {
     }catch (error){
         console.error(`Erro!: ${error.message}`)
         process.exit(1)
-    }
+    } 
 
 }

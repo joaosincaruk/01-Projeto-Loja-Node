@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+import { connectDB } from "./config/db.js";
 
 dotenv.config();
 
@@ -15,7 +16,7 @@ console.log(process.env.MONGO_URI)
 
 
 app.listen(5000, () => {
-    console.log("Servidor iniciado com sucesso em http://localhost:5000")
+    connectDB()
 })
 
 // vQoOuwrB9O8ExzrD
